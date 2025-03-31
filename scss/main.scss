@@ -1,0 +1,62 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/texts';
+@import './utils/utils';
+@import './utils/mixins';
+
+@import './components/buttons';
+@import './components/carousel-button';
+@import './components/chef-card';
+@import './components/format-card';
+@import './components/input';
+@import './components/links';
+@import './components/pagination';
+
+@import './layouts/section';
+@import './layouts/advantages-section';
+@import './layouts/chefs-section';
+@import './layouts/contact-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/form-terms';
+@import './layouts/formats-section';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/mobile-menu';
+@import './layouts/modal';
+@import './layouts/traditions-section';
+
+/* Стилі для планшетів */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__menu li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Стилі для телефонів */
+@media (max-width: 480px) {
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header__menu a {
+        font-size: 18px;
+    }
+}
